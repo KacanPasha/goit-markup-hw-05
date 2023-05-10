@@ -183,8 +183,8 @@ ul {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin: 0;
-
-  transition: color 250ms ease, transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  
 }
 .heder-link::after {
   content: "";
@@ -192,6 +192,7 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
+  bottom: -1px;
 
   display: block;
   width: 100%;
@@ -227,7 +228,7 @@ ul {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--slate);
-  transition: color 250ms ease, transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**
@@ -293,8 +294,7 @@ ul {
   padding-bottom: 10px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms ease, box-shadow 250ms ease,
-    transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -489,7 +489,7 @@ ul {
 
   color: var(--light-slate);
   fill: var(--light-slate);
-  transition: border 250ms ease, transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-socials-link:hover .customers-socials-icon {
   fill: var(--ocean);
@@ -823,8 +823,6 @@ ul {
 
   background: rgba(46, 47, 66, 0.4);
 
-
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -887,8 +885,8 @@ ul {
   border: none;
   background-color: var(--ocean);
 }
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
+.modal-close-btn:hover.modal-close-icon,
+.modal-close-btn:focus.modal-close-icon {
   background: var(--ocean);
   fill: var(--white);
 }
@@ -897,5 +895,5 @@ ul {
   fill: var(--grey);
   background: var(--cornflower);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
