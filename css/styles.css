@@ -763,9 +763,7 @@ ul {
   transform: translateY(0%);
 }
 
-.gallery-item:focus .overlay-text {
-  transform: translateY(0%);
-}
+
 
 .overlay-text {
   position: absolute;
