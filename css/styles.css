@@ -746,28 +746,6 @@ ul {
   position: relative;
   overflow: hidden;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  padding: 40px 32px;
-  color: var(--cloud);
-
-  width: 100%;
-  height: 100%;
-
-  background-color: var(--iris);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.gallery-item:hover .overlay-text,
-.gallery-item:focus .overlay-text {
-  transform: translateY(0%);
-}
-
-
-
-
 
 .overlay-text {
   position: absolute;
@@ -788,6 +766,11 @@ ul {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.gallery-item:hover .overlay-text,
+.gallery-item:focus .overlay-text {
+  transform: translateY(0%);
+}
+
 
 .gallery-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
