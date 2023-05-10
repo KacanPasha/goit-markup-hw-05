@@ -758,7 +758,10 @@ ul {
   background-color: var(--iris);
   transition: transform 250ms;
 }
-.gallery-item:hover .overlay-text,
+.gallery-item:hover .overlay-text {
+  transform: translateY(0%);
+}
+
 .gallery-item:focus .overlay-text {
   transform: translateY(0%);
 }
