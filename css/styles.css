@@ -768,8 +768,9 @@ ul {
 }
 .gallery-item:hover .overlay-text,
 .gallery-item:focus .overlay-text {
-  transform: translateY(0%);
+  transform: translateY(0%)
 }
+
 
 
 .gallery-link:hover {
